@@ -1,73 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Conheça os projetos desenvolvidos e idealizados pela VORYN nas áreas de tecnologia, educação, finanças e soluções digitais.">
+
     <title>Projetos | VORYN</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        id="tema-site"
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="shortcut icon"
+        href="imagens/logo/favicon/favicon.ico"
+        type="image/x-icon">
 </head>
+
 <body>
 
     <header>
-        <nav>
-            <h1>VORYN</h1>
+        <nav class="navbar">
 
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <a
+                class="logo"
+                href="index.html"
+                aria-label="Ir para a página inicial da VORYN">
+
+                <img
+                    id="logo-voryn"
+                    src="imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png"
+                    alt="Logo da VORYN">
+            </a>
+
+            <ul
+                id="menu-navegacao"
+                class="menu-navegacao">
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
+
+                <li>
+                    <a href="projetos.html" class="ativo">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
             </ul>
+
+            <div class="acoes-header">
+
+                <button
+                    id="botao-tema"
+                    class="botao-header"
+                    type="button"
+                    aria-label="Ativar modo claro"
+                    title="Ativar modo claro">
+                    ☀️
+                </button>
+
+                <button
+                    id="botao-menu"
+                    class="botao-header botao-menu"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu-navegacao">
+                    ☰
+                </button>
+
+            </div>
+
         </nav>
     </header>
 
     <main>
 
-        <section id="projetos">
+        <section
+            id="projetos"
+            aria-labelledby="titulo-projetos">
 
             <div class="projetos-content">
 
-                <span class="tagline">Nossa jornada</span>
+                <span class="tagline">
+                    Nossa jornada
+                </span>
 
-                <h2>Nossos Projetos</h2>
+                <h1 id="titulo-projetos">
+                    Nossos Projetos
+                </h1>
 
                 <p class="projetos-texto">
-                    Conheça alguns projetos desenvolvidos e idealizados pela VORYN,
-                    unindo tecnologia, inovação, educação e soluções digitais.
+                    Conheça alguns projetos desenvolvidos e idealizados pela
+                    VORYN, unindo tecnologia, inovação, educação e soluções
+                    digitais.
                 </p>
 
                 <div class="projetos-grid">
 
-                    <div class="card">
-                        <h3>VORYN Books</h3>
-                        <p>E-books e produtos digitais voltados para educação e desenvolvimento.</p>
+                        <a
+                    href="https://voryn-books.vercel.app/"
+                    class="card projeto-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Conhecer o projeto VORYN Books">
+
+                    <div class="projeto-conteudo">
+
+                        <h2>VORYN Books</h2>
+
+                        <p>
+                            E-books e produtos digitais voltados para
+                            educação e desenvolvimento.
+                        </p>
+
+                        <span class="projeto-link">
+                            Ver projeto
+                            <span aria-hidden="true">↗</span>
+                        </span>
+
                     </div>
 
-                    <div class="card">
-                        <h3>Financontrol</h3>
-                        <p>Projeto focado em finanças, investimentos e controle financeiro.</p>
-                    </div>
+                </a>
 
-                    <div class="card">
-                        <h3>Portfólio</h3>
-                        <p>Portfólio pessoal com projetos, relatórios, currículo e experiências.</p>
-                    </div>
+                    <a
+                        href="financontrol.html"
+                        class="card projeto-card"
+                        aria-label="Conhecer o projeto FinanControl">
 
-                    <div class="card">
-                        <h3>Aquavolt</h3>
-                        <p>Solução acadêmica voltada para energia hídrica e reaproveitamento sustentável.</p>
-                    </div>
+                        <div class="projeto-conteudo">
 
-                    <div class="card">
-                        <h3>BevShop</h3>
-                        <p>E-commerce de bebidas artesanais desenvolvido como projeto acadêmico.</p>
-                    </div>
+                            <h2>FinanControl</h2>
 
-                    <div class="card">
-                        <h3>Projetos Futuros</h3>
-                        <p>Novas ideias digitais em desenvolvimento para fortalecer o ecossistema VORYN.</p>
-                    </div>
+                            <p>
+                                Projeto focado em finanças, investimentos e
+                                controle financeiro.
+                            </p>
+
+                            <span class="projeto-status">
+                                Em breve
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <a
+                        href="https://guilherme-serafim.vercel.app"
+                        class="card projeto-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir o portfólio pessoal em uma nova guia">
+
+                        <div class="projeto-conteudo">
+
+                            <h2>Portfólio</h2>
+
+                            <p>
+                                Portfólio pessoal com projetos, relatórios,
+                                currículo e experiências.
+                            </p>
+
+                            <span class="projeto-link">
+                                Acessar projeto
+                                <span aria-hidden="true">↗</span>
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    
+                    <article
+                        class="card projeto-card projeto-card-futuro"
+                        aria-label="Projetos futuros da VORYN">
+
+                        <div class="projeto-conteudo">
+
+                            <h2>Projetos Futuros</h2>
+
+                            <p>
+                                Novas soluções digitais estão sendo desenvolvidas para expandir o ecossistema VORYN.
+                            </p>
+
+                            <span class="projeto-status">
+                                Em desenvolvimento
+                            </span>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -78,8 +231,21 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 VORYN. Todos os direitos reservados.</p>
+
+        <img
+            id="logo-footer"
+            class="logo-footer"
+            src="imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png"
+            alt="Logo da VORYN">
+
+        <p>
+            &copy; 2026 VORYN. Todos os direitos reservados.
+        </p>
+
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

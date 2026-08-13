@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | VORYN</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" id="tema-site">
+    <link rel="shortcut icon" href="imagens/logo/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <header>
-        <nav>
-            <h1>VORYN</h1>
+        <nav class="navbar">
 
-            <ul>
+            <a
+                class="logo"
+                href="index.html"
+                aria-label="Página inicial da VORYN">
+
+                <img
+                    id="logo-voryn"
+                    src="imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png"
+                    alt="Logo da VORYN">
+            </a>
+
+            <ul id="menu-navegacao" class="menu-navegacao">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
             </ul>
+
+            <div class="acoes-header">
+
+                <button
+                    id="botao-tema"
+                    class="botao-header"
+                    type="button"
+                    aria-label="Ativar modo claro"
+                    title="Ativar modo claro">
+                    ☀️
+                </button>
+
+                <button
+                    id="botao-menu"
+                    class="botao-header botao-menu"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu-navegacao">
+                    ☰
+                </button>
+
+            </div>
+
         </nav>
     </header>
 
@@ -52,8 +91,17 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 VORYN. Todos os direitos reservados.</p>
+
+    <img
+        id="logo-footer"
+        class="logo-footer"
+        src="imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png"
+        alt="VORYN">
+
+    <p>&copy; 2026 VORYN. Todos os direitos reservados.</p>
+
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

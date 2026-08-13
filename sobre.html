@@ -5,21 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre | VORYN</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Conheça a VORYN, uma marca voltada para tecnologia, inovação, educação digital e desenvolvimento de soluções digitais.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" id="tema-site">
+    <link rel="shortcut icon" href="imagens/logo/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <header>
-        <nav>
-            <h1>VORYN</h1>
+        <nav class="navbar">
 
-            <ul>
+            <a
+                class="logo"
+                href="index.html"
+                aria-label="Página inicial da VORYN">
+
+                <img
+                    id="logo-voryn"
+                    src="imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png"
+                    alt="Logo da VORYN">
+            </a>
+
+            <ul id="menu-navegacao" class="menu-navegacao">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="sobre.html" class="ativo">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+
+            <div class="acoes-header">
+
+                <button
+                    id="botao-tema"
+                    class="botao-header"
+                    type="button"
+                    aria-label="Ativar modo claro"
+                    title="Ativar modo claro">
+                    ☀️
+                </button>
+
+                <button
+                    id="botao-menu"
+                    class="botao-header botao-menu"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu-navegacao">
+                    ☰
+                </button>
+
+            </div>
+
         </nav>
     </header>
 
@@ -29,59 +70,125 @@
 
             <div class="sobre-content">
 
-                <span class="tagline">
-                    Quem Somos
-                </span>
+                <span class="tagline">Quem Somos</span>
 
                 <h2>Sobre a VORYN</h2>
 
+                <img
+                    id="logo-sobre"
+                    class="logo-sobre"
+                    src="imagens/logo/identidade-visual/modo-escuro/vertical/versao-vertical-g.png"
+                    alt="Logo vertical da VORYN">
+                
                 <p>
-                    A VORYN é uma empresa voltada para tecnologia, inovação e
-                    desenvolvimento de soluções digitais. Nosso propósito é
-                    transformar ideias em oportunidades, oportunidades em
-                    resultados e resultados em novos começos.
+                    A VORYN é uma marca dedicada ao desenvolvimento de soluções digitais,
+                    produtos e projetos que unem tecnologia, inovação e empreendedorismo.
+                    Nosso propósito é transformar ideias em oportunidades e oportunidades
+                    em resultados, criando impacto positivo por meio da criatividade e da tecnologia.
                 </p>
+
+                <div class="significado-marca">
+
+                    <h3>O Significado da VORYN</h3>
+
+                    <p>
+                        A marca <strong>VORYN</strong> representa visão,
+                        oportunidade, resultados e evolução contínua.
+                    </p>
+
+                    <div class="voryn-significado">
+
+                        <div class="significado-item">
+                            <strong>V</strong>
+                            <span>Vision</span>
+                        </div>
+
+                        <div class="significado-item">
+                            <strong>O</strong>
+                            <span>Opportunity</span>
+                        </div>
+
+                        <div class="significado-item">
+                            <strong>R</strong>
+                            <span>Results</span>
+                        </div>
+
+                        <div class="significado-item">
+                            <strong>Y</strong>
+                            <span>Your</span>
+                        </div>
+
+                        <div class="significado-item">
+                            <strong>N</strong>
+                            <span>Next</span>
+                        </div>
+
+                    </div>
+
+                </div>
 
                 <div class="sobre-grid">
 
                     <div class="card">
+                        <div class="card-icon">💡</div>
                         <h3>Missão</h3>
-
                         <p>
-                            Criar soluções digitais que gerem valor para pessoas,
-                            empresas e projetos.
+                            Transformar ideias em oportunidades e oportunidades
+                            em resultados por meio da tecnologia, educação e inovação.
                         </p>
                     </div>
 
                     <div class="card">
+                        <div class="card-icon">🚀</div>
                         <h3>Visão</h3>
-
                         <p>
-                            Ser uma referência em tecnologia, inovação e
-                            desenvolvimento digital.
+                            Construir um ecossistema de negócios digitais
+                            reconhecido pela inovação, qualidade e capacidade
+                            de transformar ideias em resultados.
                         </p>
                     </div>
 
                     <div class="card">
+                        <div class="card-icon">⭐</div>
                         <h3>Valores</h3>
-
                         <p>
-                            Inovação, transparência, qualidade, aprendizado
-                            contínuo e compromisso com resultados.
+                            Inovação, qualidade, transparência, aprendizado contínuo,
+                            responsabilidade, evolução e compromisso com resultados.
                         </p>
                     </div>
 
                     <div class="card">
+                        <div class="card-icon">🎯</div>
                         <h3>Objetivo</h3>
-
                         <p>
-                            Construir uma marca sólida que una tecnologia,
-                            educação, inovação e empreendedorismo.
+                            Criar e expandir marcas, produtos e projetos digitais
+                            que conectem tecnologia, educação, inovação e empreendedorismo.
                         </p>
                     </div>
 
                 </div>
 
+                <div class="filosofia-marca">
+
+                    <h3>Slogan Oficial</h3>
+
+                    <blockquote class="slogan-en">
+                        Vision Creates Opportunity.<br>
+                        Opportunity Drives Results.<br>
+                        Results Define Your Next Level.
+                    </blockquote>
+
+                    <p class="slogan-pt">
+                        A visão cria oportunidades.<br>
+                        As oportunidades geram resultados.<br>
+                        Os resultados definem seu próximo nível.
+                    </p>
+
+                    <div class="assinatura-marca">
+                        Vision. Opportunity. Results. Your Next.
+                    </div>
+
+                </div>
             </div>
 
         </section>
@@ -89,8 +196,17 @@
     </main>
 
     <footer>
+
+        <img
+            id="logo-footer"
+            class="logo-footer"
+            src="imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png"
+            alt="VORYN">
+
         <p>&copy; 2026 VORYN. Todos os direitos reservados.</p>
+
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
