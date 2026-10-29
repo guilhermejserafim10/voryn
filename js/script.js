@@ -39,12 +39,16 @@ function aplicarTema(tema) {
     if (temaSite) {
         temaSite.setAttribute(
             "href",
-            temaClaro ? "style-light.css" : "style.css"
+            temaClaro
+                ? "css/style-light.css"
+                : "css/style.css"
         );
     }
 
     if (logo) {
-        logo.src = temaClaro ? logoClara : logoEscura;
+        logo.src = temaClaro
+            ? logoClara
+            : logoEscura;
     }
 
     if (logoFooter) {
@@ -60,7 +64,8 @@ function aplicarTema(tema) {
     }
 
     if (botaoTema) {
-        botaoTema.textContent = temaClaro ? "🌙" : "☀️";
+        botaoTema.textContent =
+            temaClaro ? "🌙" : "☀️";
 
         botaoTema.setAttribute(
             "aria-label",
@@ -86,15 +91,20 @@ function aplicarTema(tema) {
 const temaSalvo = localStorage.getItem("tema");
 
 aplicarTema(
-    temaSalvo === "light" ? "light" : "dark"
+    temaSalvo === "light"
+        ? "light"
+        : "dark"
 );
 
 if (botaoTema) {
     botaoTema.addEventListener("click", () => {
-        const temaAtual = localStorage.getItem("tema");
+        const temaAtual =
+            localStorage.getItem("tema");
 
         aplicarTema(
-            temaAtual === "light" ? "dark" : "light"
+            temaAtual === "light"
+                ? "dark"
+                : "light"
         );
     });
 }
