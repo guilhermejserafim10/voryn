@@ -313,6 +313,117 @@ header {
     display: block;
 }
 
+
+/* =========================
+   NOSSA HISTÓRIA
+========================= */
+
+.historia-marca {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 65px auto 0;
+    padding: 45px 50px;
+
+    background: linear-gradient(
+        145deg,
+        #1E293B,
+        #243247
+    );
+
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 16px;
+
+    text-align: left;
+}
+
+.historia-marca h3 {
+    margin-bottom: 30px;
+
+    color: #3B82F6;
+
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.sobre-content .historia-marca p {
+    margin-bottom: 22px;
+
+    color: #CBD5E1;
+
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.sobre-content .historia-marca .historia-destaque {
+    margin: 35px 0 15px;
+
+    color: #60A5FA;
+
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.historia-destaque strong {
+    color: inherit;
+}
+
+.sobre-content .historia-marca p:last-child {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE — NOSSA HISTÓRIA */
+
+@media (max-width: 768px) {
+
+    .historia-marca {
+        margin-top: 45px;
+        padding: 32px 25px;
+    }
+
+    .historia-marca h3 {
+        font-size: 26px;
+    }
+
+    .sobre-content .historia-marca p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .sobre-content .historia-marca .historia-destaque {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .historia-marca {
+        margin-top: 35px;
+        padding: 28px 20px;
+        border-radius: 12px;
+    }
+
+    .historia-marca h3 {
+        font-size: 24px;
+    }
+
+    .sobre-content .historia-marca p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .sobre-content .historia-marca .historia-destaque {
+        font-size: 22px;
+    }
+}
+
 /* =========================
    SIGNIFICADO DA MARCA
 ========================= */
