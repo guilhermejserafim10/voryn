@@ -1494,3 +1494,320 @@ footer {
         padding: 14px;
     }
 }
+
+
+/* =========================
+   SERVIÇOS — NOVA APRESENTAÇÃO
+========================= */
+
+.servicos-introducao {
+    margin-bottom: 65px;
+}
+
+.servicos-introducao h1 {
+    margin: 20px 0;
+
+    color: #F8FAFC;
+
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.servicos-introducao .servicos-texto {
+    margin-bottom: 0;
+}
+
+/* CATEGORIAS DE SERVIÇOS */
+
+.servicos-categoria {
+    margin-bottom: 85px;
+}
+
+.servicos-content .servicos-categoria h2,
+.servicos-content .servicos-diferenciais h2,
+.servicos-content .servicos-contato h2 {
+    margin: 0 0 20px;
+
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.servicos-descricao {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: #CBD5E1;
+
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+/* CARDS DOS SERVIÇOS */
+
+.servicos-categoria .servicos-grid {
+    margin-top: 35px;
+    align-items: stretch;
+}
+
+.servico-card {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.servico-card h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.servico-card p {
+    color: #CBD5E1;
+    line-height: 1.7;
+}
+
+/* SERVIÇOS PLANEJADOS */
+
+.servico-planejado {
+    border-color: rgba(148, 163, 184, 0.3);
+}
+
+.servico-status {
+    display: inline-block;
+
+    margin-bottom: 15px;
+    padding: 8px 15px;
+
+    color: #CBD5E1;
+    background: rgba(148, 163, 184, 0.12);
+
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* DIFERENCIAIS */
+
+.servicos-diferenciais {
+    margin-bottom: 85px;
+}
+
+.servicos-diferenciais .tagline {
+    margin-bottom: 15px;
+}
+
+.diferenciais-grid {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.diferencial-card {
+    width: 100%;
+    max-width: 350px;
+
+    text-align: center;
+}
+
+.diferencial-card h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.diferencial-card p {
+    color: #CBD5E1;
+    line-height: 1.7;
+}
+
+/* CONTATO DOS SERVIÇOS */
+
+.servicos-contato {
+    max-width: 950px;
+
+    margin: 0 auto;
+    padding: 55px 40px;
+
+    background: linear-gradient(
+        145deg,
+        #1E293B,
+        #243247
+    );
+
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+.servicos-contato .tagline {
+    margin-bottom: 15px;
+}
+
+.servicos-contato p {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    color: #CBD5E1;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.servicos-contato .btn-primary {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #3B82F6;
+    color: #F8FAFC;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+}
+
+.servicos-contato .btn-primary:hover {
+    background: #2563EB;
+    transform: translateY(-3px);
+}
+
+.servicos-contato .btn-primary:focus-visible {
+    outline: 3px solid #93C5FD;
+    outline-offset: 4px;
+}
+
+/* =========================
+   RESPONSIVIDADE — SERVIÇOS
+========================= */
+
+@media (max-width: 768px) {
+
+    .servicos-introducao {
+        margin-bottom: 50px;
+    }
+
+    .servicos-introducao h1 {
+        font-size: 38px;
+    }
+
+    .servicos-categoria,
+    .servicos-diferenciais {
+        margin-bottom: 65px;
+    }
+
+    .servicos-content .servicos-categoria h2,
+    .servicos-content .servicos-diferenciais h2,
+    .servicos-content .servicos-contato h2 {
+        font-size: 30px;
+    }
+
+    .servicos-descricao {
+        font-size: 17px;
+    }
+
+    .servico-card {
+        max-width: 520px;
+    }
+
+    .diferencial-card {
+        max-width: 520px;
+    }
+
+    .servicos-contato {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .servicos-introducao {
+        margin-bottom: 40px;
+    }
+
+    .servicos-introducao h1 {
+        font-size: 36px;
+    }
+
+    .servicos-categoria,
+    .servicos-diferenciais {
+        margin-bottom: 55px;
+    }
+
+    .servicos-content .servicos-categoria h2,
+    .servicos-content .servicos-diferenciais h2,
+    .servicos-content .servicos-contato h2 {
+        font-size: 26px;
+    }
+
+    .servicos-descricao {
+        font-size: 16px;
+    }
+
+    .servico-card,
+    .diferencial-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 28px 22px;
+    }
+
+    .servico-card h3,
+    .diferencial-card h3 {
+        font-size: 19px;
+    }
+
+    .servico-card p,
+    .diferencial-card p {
+        font-size: 16px;
+    }
+
+    .servicos-contato {
+        padding: 35px 20px;
+        border-radius: 12px;
+    }
+
+    .servicos-contato p {
+        font-size: 16px;
+    }
+
+    .servicos-contato .btn-primary {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .servicos-introducao h1 {
+        font-size: 32px;
+    }
+
+    .servicos-content .servicos-categoria h2,
+    .servicos-content .servicos-diferenciais h2,
+    .servicos-content .servicos-contato h2 {
+        font-size: 24px;
+    }
+}
