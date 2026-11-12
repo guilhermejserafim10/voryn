@@ -1,3 +1,4 @@
+
 const botaoTema = document.getElementById("botao-tema");
 const temaSite = document.getElementById("tema-site");
 
@@ -8,26 +9,49 @@ const logo = document.getElementById("logo-voryn");
 const logoFooter = document.getElementById("logo-footer");
 const logoSobre = document.getElementById("logo-sobre");
 
-// Logos horizontais
+// Imagem da plataforma institucional
+const imagemPlataforma =
+    document.getElementById("imagem-plataforma");
+
+/* =========================
+   LOGOS HORIZONTAIS
+========================= */
+
 const logoEscura =
     "imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png";
 
 const logoClara =
     "imagens/logo/identidade-visual/modo-claro/horizontal/fundo-branco-hor.png";
 
-// Logos do footer
+/* =========================
+   LOGOS DO FOOTER
+========================= */
+
 const logoFooterEscura =
     "imagens/logo/identidade-visual/modo-escuro/horizontal/versao-horizontal.png";
 
 const logoFooterClara =
     "imagens/logo/identidade-visual/modo-claro/horizontal/fundo-branco-hor.png";
 
-// Logos verticais da página Sobre
+/* =========================
+   LOGOS DA PÁGINA SOBRE
+========================= */
+
 const logoSobreEscura =
     "imagens/logo/identidade-visual/modo-escuro/vertical/versao-vertical-g.png";
 
 const logoSobreClara =
     "imagens/logo/identidade-visual/modo-claro/vertical/fundo-branco-vert-g.png";
+
+/* =========================
+   IMAGENS DOS PROJETOS
+========================= */
+
+const plataformaEscura =
+    "imagens/projetos/plataforma-institucional/plataforma-escuro.png";
+
+const plataformaClara =
+    "imagens/projetos/plataforma-institucional/plataforma-claro.png";
 
 /* =========================
    TEMA
@@ -36,6 +60,7 @@ const logoSobreClara =
 function aplicarTema(tema) {
     const temaClaro = tema === "light";
 
+    // Alternar arquivo CSS
     if (temaSite) {
         temaSite.setAttribute(
             "href",
@@ -45,24 +70,35 @@ function aplicarTema(tema) {
         );
     }
 
+    // Alternar logo do cabeçalho
     if (logo) {
         logo.src = temaClaro
             ? logoClara
             : logoEscura;
     }
 
+    // Alternar logo do rodapé
     if (logoFooter) {
         logoFooter.src = temaClaro
             ? logoFooterClara
             : logoFooterEscura;
     }
 
+    // Alternar logo da página Sobre
     if (logoSobre) {
         logoSobre.src = temaClaro
             ? logoSobreClara
             : logoSobreEscura;
     }
 
+    // Alternar imagem da plataforma institucional
+    if (imagemPlataforma) {
+        imagemPlataforma.src = temaClaro
+            ? plataformaClara
+            : plataformaEscura;
+    }
+
+    // Atualizar botão de tema
     if (botaoTema) {
         botaoTema.textContent =
             temaClaro ? "🌙" : "☀️";
@@ -82,11 +118,16 @@ function aplicarTema(tema) {
         );
     }
 
+    // Salvar preferência
     localStorage.setItem(
         "tema",
         temaClaro ? "light" : "dark"
     );
 }
+
+/* =========================
+   INICIALIZAÇÃO DO TEMA
+========================= */
 
 const temaSalvo = localStorage.getItem("tema");
 
@@ -95,6 +136,10 @@ aplicarTema(
         ? "light"
         : "dark"
 );
+
+/* =========================
+   BOTÃO DE ALTERNÂNCIA
+========================= */
 
 if (botaoTema) {
     botaoTema.addEventListener("click", () => {
@@ -157,6 +202,10 @@ function alternarMenu() {
     );
 }
 
+/* =========================
+   EVENTOS DO MENU
+========================= */
+
 if (botaoMenu) {
     botaoMenu.addEventListener(
         "click",
@@ -176,6 +225,7 @@ if (menuNavegacao) {
     });
 }
 
+// Fechar menu ao clicar fora
 document.addEventListener("click", (event) => {
     if (!menuNavegacao || !botaoMenu) {
         return;
@@ -192,6 +242,7 @@ document.addEventListener("click", (event) => {
     }
 });
 
+// Fechar menu ao voltar para desktop
 window.addEventListener("resize", () => {
     if (window.innerWidth > 768) {
         fecharMenu();

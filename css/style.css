@@ -1811,3 +1811,77 @@ footer {
         font-size: 24px;
     }
 }
+
+
+/* =========================
+   PROJETOS — ALINHAMENTO
+========================= */
+
+.projetos-grid {
+    grid-template-columns: repeat(2, minmax(0, 420px));
+    justify-content: center;
+    align-items: stretch;
+}
+
+.projetos-grid .projeto-card-futuro {
+    grid-column: auto;
+}
+
+.projeto-card {
+    height: 100%;
+    cursor: default;
+}
+
+.projeto-card .projeto-status {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.projeto-card .projeto-link {
+    margin-top: auto;
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+.projeto-card .projeto-link:hover {
+    text-decoration: underline;
+}
+
+.projeto-card .projeto-link:focus-visible {
+    outline: 3px solid #3B82F6;
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .projetos-grid {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+    }
+
+    .projeto-card {
+        max-width: 520px;
+    }
+}
+
+
+/* IMAGEM DA PLATAFORMA INSTITUCIONAL */
+
+.projeto-imagem {
+    display: block;
+    width: 100%;
+    margin-bottom: 22px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.projeto-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
